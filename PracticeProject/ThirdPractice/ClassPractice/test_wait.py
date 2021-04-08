@@ -31,7 +31,8 @@ class TestWait:
             # wait = WebDriverWait(driver,10,0.5)
             # #使用匿名函数
             # wait.until(lambda diver:driver.find_elements('By.xpath,'//*[@class="d-button-label"]'))>=1
-         WebDriverWait(self.driver,10,0.5).until(expected_conditions.frame_to_be_available_and_switch_to_it(By.xpath,'//*[@class="d-button-label"]'))
+
+         WebDriverWait(self.driver,10).until(expected_conditions.presence_of_all_elements_located((By.XPATH,'//*[@class="d-button-label"]')))
          self.driver.find_element_by_xpath('//*[@class="d-button-label"]').click()
          #sleep(2)
 
