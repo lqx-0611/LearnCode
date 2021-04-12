@@ -1,5 +1,5 @@
 
-from FirstPractice.Homework.Hero import hero
+from PracticeProject.FirstPractice.Homework.Hero import hero
 
 
 

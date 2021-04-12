@@ -1,5 +1,7 @@
-from FirstPractice.Homework.Police import police
-from FirstPractice.Homework.Timo import timo
+from PracticeProject.FirstPractice.Homework.Police import police
+from PracticeProject.FirstPractice.Homework.Timo import timo
+
+
 
 if __name__ =='__main__':
     Police = police()

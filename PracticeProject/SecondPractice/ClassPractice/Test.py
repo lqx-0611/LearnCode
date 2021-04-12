@@ -1,1 +1,0 @@
-print("test_githg日日日g")
