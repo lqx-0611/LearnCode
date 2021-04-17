@@ -15,7 +15,7 @@ timo : 提莫队长正在待命
 police: 见识一下法律的子弹
 '''
 
-class hero:
+class Hero:
     hp = 0
     power = 0
     Hero_name ='xx'

@@ -1,8 +1,8 @@
 
-from PracticeProject.FirstPractice.Homework.Hero import hero
+from PracticeProject.first_practice.homework.hero import Hero
 
 
-class police(hero):
+class Police(Hero):
     hp = 9000
     power = 200
     Hero_name = 'Police'

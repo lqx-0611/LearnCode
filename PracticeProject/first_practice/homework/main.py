@@ -1,11 +1,11 @@
-from PracticeProject.FirstPractice.Homework.Police import police
-from PracticeProject.FirstPractice.Homework.Timo import timo
+from PracticeProject.first_practice.homework.police import Police
+from PracticeProject.first_practice.homework.timo import Timo
 
 
 
 if __name__ =='__main__':
-    Police = police()
-    Timo = timo()
+    Police = Police()
+    Timo = Timo()
     Police.fight(Timo.hp, Timo.power)
     Police.speak_lines()
     print("---------")

@@ -1,16 +1,15 @@
 
-from PracticeProject.FirstPractice.Homework.Police import police
-from PracticeProject.FirstPractice.Homework.Timo import timo
-class Hero_factory:
-
+from PracticeProject.first_practice.homework.police import Police
+from PracticeProject.first_practice.homework.timo import Timo
+class HeroFactory:
     def create_hero(self,name):
         if name == 'Police':
-            return police()
+            return Police()
         elif name == 'Timo':
-            return timo()
+            return Timo()
         else:
             print("此英雄不在英雄工厂中")
 
-hero_factory = Hero_factory()
+hero_factory = HeroFactory()
 Police = hero_factory.create_hero("Police")
 Timo = hero_factory.create_hero("Timo")
