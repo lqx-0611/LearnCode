@@ -1,5 +1,5 @@
 
-from PracticeProject.first_practice.homework.hero import Hero
+from practice_project.first_practice.homework.hero import Hero
 
 
 class Police(Hero):

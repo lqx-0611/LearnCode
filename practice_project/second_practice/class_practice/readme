@@ -1,0 +1,48 @@
+一.fixture 的用法
+Fixture 是为了测试⽤例的执⾏，初始化⼀些数据和⽅法
+1、类似 setUp, tearDown 功能，但⽐ setUp, tearDown 更灵活
+2、直接通过函数名字调⽤或使用装饰器@pytest.mark.usefixtures(‘test1’)
+3、允许使用多个Fixture
+4、使用 autouse 自动应用，如果要返回值，需要传fixture函数名
+5、作用域（session>module>class>function）
+-setup-show 回溯 fixture 的执行过程
+
+
+
+二.conftest.py 注意
+conftest.py配置需要注意:
+conftest.py文件名是不能换的（重要）
+conftest.py与运行的用例要在同一个package下，并且有__init__.py文件
+不需要import导入conftest.py，pytest用例会自动查找
+所有同目录测试文件运行前都会执行conftest.py文件
+全局的配置和前期工作都可以写在这里，放在某个包下，就是这 个包数据共享的地方。
+就近原则，离测试模块最近的conftest.py 文件生效
+
+
+三.pytest常用插件
+pip install pytest-ordering  控制用例的执行顺序
+pip install pytest-dependency   控制用例的依赖关系
+pip install pytest-xdist    分布式并发执行测试用例
+pip install pytest-rerunfailures   失败重跑
+pip install pytest-assume              多重较验
+pip install pytest-random-order  用例随机执行
+pip intall  pytest-html                    测试报告
+
+
+
+四.测试报告 Allure
+安装 Java 环境（建议1.8的版本）
+安装 allure
+下载地址
+Central Repository: io/qameta/allure/allure-commandline/2.13.9 13
+解压 ，配置环境变量（将bin/目录配置到环境变量中PATH）
+安装 allure-pytest 到项目的虚拟环境下
+pip install allure-pytest
+Allure2 解析过程：
+安装 allure2
+Allure help 帮助文档
+生成 allure 测试结果 ：pytest —alluredir=./report/
+展示报告：allure serve ./report
+生成最终版本的报告： allure generate ./report
+在本地搭建一个网站服务（例如：Django）
+python manage.py runserver (http://127.0.0.1:8000/ 5)

@@ -1,6 +1,6 @@
 
-from PracticeProject.first_practice.homework.police import Police
-from PracticeProject.first_practice.homework.timo import Timo
+from practice_project.first_practice.homework.police import Police
+from practice_project.first_practice.homework.timo import Timo
 class HeroFactory:
     def create_hero(self,name):
         if name == 'Police':
